@@ -26,7 +26,21 @@ func _ready()->void:
 	add_to_group("player")
 
 func _physics_process(delta: float) -> void:
+	var total_warnings: int = 1000000
+	var warnings_per_frame: int = 100
 
+	var generated: int = 0
+	var batch: int = mini(
+		warnings_per_frame,
+		total_warnings - generated
+	)
+
+	for i in range(batch):
+		generated += 1
+		push_warning("Generated warning #%d" % generated)
+
+	if generated >= total_warnings:
+		set_process(false)
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.

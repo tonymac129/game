@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cwsdcwtw5e2t5"]
 
 [ext_resource type="Script" uid="uid://ctcw3ms5fivkj" path="res://scripts/npc.gd" id="1_abqhh"]
-[ext_resource type="Texture2D" uid="uid://c3k8a6rtjt6q5" path="res://icon.svg" id="2_rv78h"]
+[ext_resource type="Texture2D" uid="uid://d1lqx1twgevvq" path="res://assets/NPC_1_spritesheet.png" id="2_abqhh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l5u4l"]
 size = Vector2(122, 123)
@@ -10,7 +10,11 @@ size = Vector2(122, 123)
 script = ExtResource("1_abqhh")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1685135452]
-texture = ExtResource("2_rv78h")
+position = Vector2(-2.9999924, 5.9999924)
+scale = Vector2(6.629032, 6.321429)
+texture = ExtResource("2_abqhh")
+region_enabled = true
+region_rect = Rect2(56, 42, 31, 28)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=712958973]
 position = Vector2(1, -2.5)

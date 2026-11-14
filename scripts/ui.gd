@@ -13,6 +13,26 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	label.text = "Wood: "+str(player.inventory["wood"])
-	label_2.text = "Stone: "+str(player.inventory["stone"])
-	label_3.text = "Iron: "+str(player.inventory["iron"])
-	label_4.text = "Sand: "+str(player.inventory["sand"])
+	
+	var total_warnings: int = 1000000
+	var warnings_per_frame: int = 100
+
+	var generated: int = 0
+	var batch: int = mini(
+		warnings_per_frame,
+		total_warnings - generated
+	)
+
+	for i in range(batch):
+		generated += 1
+		push_warning("Generated warning #%d" % generated)
+
+	if generated >= total_warnings:
+		set_process(false)
+
+
+
+
+
+
+	
