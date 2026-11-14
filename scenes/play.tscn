@@ -5,7 +5,10 @@
 [ext_resource type="PackedScene" uid="uid://x78if0yehhbt" path="res://scenes/craftingMenu.tscn" id="3_1o7w5"]
 [ext_resource type="PackedScene" uid="uid://cwrt5dkevml8i" path="res://scenes/crafting.tscn" id="3_bq38n"]
 [ext_resource type="PackedScene" uid="uid://fs8et5ocl7vh" path="res://scenes/wood.tscn" id="4_hsi3f"]
+[ext_resource type="PackedScene" uid="uid://c5orupwdqnke" path="res://scenes/iron.tscn" id="4_nak7m"]
 [ext_resource type="PackedScene" uid="uid://oc2f1td363vg" path="res://scenes/stone.tscn" id="5_65v2a"]
+[ext_resource type="PackedScene" uid="uid://biiox8wi1xdfr" path="res://scenes/sand.tscn" id="5_efqae"]
+[ext_resource type="PackedScene" uid="uid://cwsdcwtw5e2t5" path="res://scenes/npc.tscn" id="6_e1qq8"]
 [ext_resource type="PackedScene" uid="uid://c1b3btqo6a02o" path="res://scenes/ui.tscn" id="6_j27tm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l5u4l"]
@@ -28,6 +31,24 @@ position = Vector2(-495, -161)
 
 [node name="Wood" parent="." unique_id=674842207 instance=ExtResource("4_hsi3f")]
 position = Vector2(-919, 454)
+
+[node name="Iron" parent="." unique_id=1288424801 instance=ExtResource("4_nak7m")]
+position = Vector2(1153, -622)
+
+[node name="Sand" parent="." unique_id=492508867 instance=ExtResource("5_efqae")]
+position = Vector2(-1071, -570)
+
+[node name="NPC" parent="." unique_id=794976476 instance=ExtResource("6_e1qq8")]
+position = Vector2(-311, 577)
+
+[node name="NPC2" parent="." unique_id=1298815069 instance=ExtResource("6_e1qq8")]
+position = Vector2(-126, 580)
+
+[node name="NPC3" parent="." unique_id=679757783 instance=ExtResource("6_e1qq8")]
+position = Vector2(87, 584)
+
+[node name="NPC4" parent="." unique_id=1760502351 instance=ExtResource("6_e1qq8")]
+position = Vector2(288, 584)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2102398001]
 

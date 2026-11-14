@@ -5,7 +5,7 @@ extends Area2D
 @onready var hint: Control = $Hint
 
 var hold_time: float = 0.0
-const HOLD_REQUIRED: float = 5.0
+const HOLD_REQUIRED: float = 0.3
 
 func _process(delta: float) -> void:
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and entered:
