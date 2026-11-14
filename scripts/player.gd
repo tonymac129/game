@@ -1,5 +1,8 @@
 extends CharacterBody2D
 
+@onready var sprite_2d: Sprite2D = $Sprite2D
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
+
 var inventory = {
 	"wood": 0,
 	"stone": 0,
@@ -25,6 +28,17 @@ func _physics_process(delta: float) -> void:
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var directionX := Input.get_axis("move_left", "move_right")
 	var directionY := Input.get_axis("move_up", "move_down")
+	if directionX == 0 and directionY==0:
+		animation_player.play("idle")
+	if Input.is_action_just_pressed("move_left"):
+		animation_player.play("walk_left")
+	if Input.is_action_just_pressed("move_right"):
+		animation_player.play("walk_right")
+	if Input.is_action_just_pressed("move_up"):
+		animation_player.play("walk_up")
+	if Input.is_action_just_pressed("move_down"):
+		animation_player.play("walk_down")
+		
 	if directionX:
 		velocity.x = directionX * SPEED
 	else:

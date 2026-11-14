@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" uid="uid://dy2yuf8su81ni" path="res://scripts/player.gd" id="1_g2els"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_u4gox"]
-size = Vector2(116, 115)
-
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3vyb7"]
 load_path = "res://.godot/imported/characters (4).png-0ea8cf3c406f4050288a760ef913ea2b.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u4gox"]
+size = Vector2(43, 77.875)
 
 [sub_resource type="Animation" id="Animation_g2els"]
 length = 0.001
@@ -43,7 +43,8 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_dqkch"]
 resource_name = "walk_down"
-length = 0.39999999999999997
+length = 0.4
+loop_mode = 1
 step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -60,7 +61,8 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_3vyb7"]
 resource_name = "walk_left"
-length = 0.39999999999999997
+length = 0.4
+loop_mode = 1
 step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -77,7 +79,8 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_qlg0r"]
 resource_name = "walk_right"
-length = 0.39999999999999997
+length = 0.4
+loop_mode = 1
 step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -94,7 +97,8 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_tuyoq"]
 resource_name = "walk_up"
-length = 0.39999999999999997
+length = 0.4
+loop_mode = 1
 step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -122,15 +126,18 @@ _data = {
 [node name="Player" type="CharacterBody2D" unique_id=1915863104]
 script = ExtResource("1_g2els")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2126098903]
-position = Vector2(0, 0.5)
-shape = SubResource("RectangleShape2D_u4gox")
-
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1371738784]
+position = Vector2(-3.8146973e-06, -3.0000038)
+scale = Vector2(6.2734404, 6.078125)
 texture = SubResource("CompressedTexture2D_3vyb7")
 hframes = 4
 vframes = 4
 frame = 1
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2126098903]
+position = Vector2(0, -6)
+shape = SubResource("RectangleShape2D_u4gox")
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=33547835]
 libraries/ = SubResource("AnimationLibrary_dqkch")
+autoplay = &"idle"
