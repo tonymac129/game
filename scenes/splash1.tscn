@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dp6c7jrmh5evu"]
+
+[ext_resource type="Script" uid="uid://biw2yogp0qxq8" path="res://scripts/splash_1.gd" id="1_p6eie"]
+
+[node name="Menu" type="Node" unique_id=245112638]
+script = ExtResource("1_p6eie")
+
+[node name="Label2" type="Label" parent="." unique_id=693772625]
+offset_left = -366.0
+offset_top = -82.0
+offset_right = 358.0
+offset_bottom = 50.0
+theme_override_font_sizes/font_size = 30
+text = "You are Mr. Rock, your goal is to revive an entire villager's population of 4 who have been petrified using miracle potion"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="." unique_id=1545755544]
+offset_left = -111.0
+offset_top = 119.0
+offset_right = 109.0
+offset_bottom = 192.0
+theme_override_font_sizes/font_size = 30
+text = "Next"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1873340636]

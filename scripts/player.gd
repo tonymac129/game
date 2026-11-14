@@ -6,18 +6,14 @@ signal inventory_changed
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 var inventory = {
-	"wood": 100,
-	"stone": 100,
-	"iron": 100,
-	"sand": 100,
-	"shovel": true,
-	"pickaxe": true,
-	"bottle": true,
-	"miracle": true,
-}
-
-var discovered = {
-	"stick": false,
+	"wood": 0,
+	"stone": 0,
+	"iron": 0,
+	"sand": 0,
+	"shovel": false,
+	"pickaxe": false,
+	"bottle": false,
+	"miracle": false,
 }
 
 const SPEED = 300.0

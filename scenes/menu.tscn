@@ -67,9 +67,6 @@ expand_icon = true
 
 [connection signal="pressed" from="Buttons/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Buttons/Play" to="Buttons/Play" method="_on_pressed"]
-[connection signal="pressed" from="Buttons/Quit" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Buttons/Quit" to="Buttons/Quit" method="_on_pressed"]
-[connection signal="pressed" from="Buttons/Options" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Buttons/Options" to="Buttons/Options" method="_on_pressed"]
-[connection signal="pressed" from="Buttons/About" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Buttons/About" to="Buttons/About" method="_on_pressed"]

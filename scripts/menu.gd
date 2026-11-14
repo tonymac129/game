@@ -24,7 +24,7 @@ func _ready() -> void:
 	quit.pressed.connect(_on_quit_pressed)
 
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/play.tscn")
+	get_tree().change_scene_to_file("res://scenes/splash1.tscn")
 
 func _on_quit_pressed() -> void:
 	get_tree().quit()

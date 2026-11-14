@@ -2,8 +2,10 @@ extends Area2D
 
 @onready var player: CharacterBody2D = %Player
 @onready var label: Label = $Label
+@onready var sprite_2d: Sprite2D = $Sprite2D
 
 var revived = false
+var revived_texture = preload("res://assets/grass_blob47 (1).png")
 
 func _process(delta: float) -> void:
 	if revived:
@@ -13,6 +15,7 @@ func _process(delta: float) -> void:
 			print("test")
 			player.inventory["miracle"] = false
 			revived = true
+			sprite_2d.texture = revived_texture
 		if player.inventory["miracle"]:
 			label.text="Click to revive this person!"
 		else:

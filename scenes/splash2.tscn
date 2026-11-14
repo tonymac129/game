@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bejlw2dixjrkl"]
+
+[ext_resource type="Script" uid="uid://de87uu2b16v0o" path="res://scripts/splash_2.gd" id="1_har34"]
+
+[node name="Menu" type="Node" unique_id=245112638]
+script = ExtResource("1_har34")
+
+[node name="Label2" type="Label" parent="." unique_id=693772625]
+offset_left = -362.0
+offset_top = -67.0
+offset_right = 362.0
+offset_bottom = 65.0
+theme_override_font_sizes/font_size = 30
+text = "Gather wood, stone, iron, and sand to craft tools and gather upgrades to craft miracle potion and cure each of the villagers!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="." unique_id=1545755544]
+offset_left = -111.0
+offset_top = 119.0
+offset_right = 109.0
+offset_bottom = 192.0
+theme_override_font_sizes/font_size = 30
+text = "Start"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1873340636]

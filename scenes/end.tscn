@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://w7ponai83ppr"]
+
+[ext_resource type="Script" uid="uid://cf5d862jlgmq8" path="res://scripts/end.gd" id="1_mwn6m"]
+
+[node name="Menu" type="Node" unique_id=245112638]
+script = ExtResource("1_mwn6m")
+
+[node name="Label" type="Label" parent="." unique_id=565222195]
+offset_left = -190.0
+offset_top = -243.0
+offset_right = 194.0
+offset_bottom = -133.0
+theme_override_font_sizes/font_size = 80
+text = "Congrats!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=693772625]
+offset_left = -362.0
+offset_top = -67.0
+offset_right = 362.0
+offset_bottom = 65.0
+theme_override_font_sizes/font_size = 30
+text = "You've successfully unpetrified all the villagers! Thank you for putting in the effort, the village has \"bounced back\" from ruin!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="." unique_id=1545755544]
+offset_left = -111.0
+offset_top = 119.0
+offset_right = 109.0
+offset_bottom = 192.0
+theme_override_font_sizes/font_size = 30
+text = "Play again"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1873340636]

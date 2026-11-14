@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bvt8gy7mj2pt5"]
 
-[ext_resource type="Script" uid="uid://ctay2dwwpqmwi" path="res://scripts/about.gd" id="1_c2u1v"]
+[ext_resource type="Script" uid="uid://dr7cr67mjogpi" path="res://scripts/options.gd" id="1_c2u1v"]
 
 [node name="Options" type="Node2D" unique_id=1767436820]
 script = ExtResource("1_c2u1v")
@@ -23,12 +23,12 @@ horizontal_alignment = 1
 
 [node name="Label2" type="Label" parent="." unique_id=1524943139]
 custom_maximum_size = Vector2(400, 200)
-offset_left = -208.0
-offset_top = -26.0
-offset_right = 192.0
-offset_bottom = 64.0
+offset_left = -160.0
+offset_top = -20.0
+offset_right = 240.0
+offset_bottom = 70.0
 theme_override_font_sizes/font_size = 20
-text = "Options coming soon"
+text = "Mute volume"
 horizontal_alignment = 1
 autowrap_mode = 2
 
@@ -39,3 +39,10 @@ offset_right = 64.0
 offset_bottom = 157.0
 theme_override_font_sizes/font_size = 25
 text = "Close"
+
+[node name="CheckBox" type="CheckBox" parent="." unique_id=486639939]
+offset_left = -68.0
+offset_top = -25.0
+offset_right = -44.0
+offset_bottom = -1.0
+scale = Vector2(1.5, 1.5)
