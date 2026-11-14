@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://fs8et5ocl7vh"]
+
+[ext_resource type="Script" uid="uid://cx4vy6vg3e3he" path="res://scripts/wood.gd" id="1_d45ue"]
+[ext_resource type="Texture2D" uid="uid://c3k8a6rtjt6q5" path="res://icon.svg" id="2_es2n6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l5u4l"]
+size = Vector2(298, 259)
+
+[node name="Wood" type="Area2D" unique_id=140455598]
+script = ExtResource("1_d45ue")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=289639938]
+position = Vector2(-6, -6)
+shape = SubResource("RectangleShape2D_l5u4l")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1749610209]
+position = Vector2(-6, -5)
+scale = Vector2(2.3359375, 1.9765625)
+texture = ExtResource("2_es2n6")
+
+[node name="Label" type="Label" parent="Sprite2D" unique_id=942529469]
+anchors_preset = -1
+anchor_right = 0.38900003
+anchor_bottom = 0.28
+offset_left = -58.220737
+offset_top = -60.205536
+offset_right = 8.856827
+offset_bottom = -41.911156
+theme_override_colors/font_color = Color(0.9297146, 0.9297147, 0.9297146, 1)
+theme_override_font_sizes/font_size = 25
+text = "Wood"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

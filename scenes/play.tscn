@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://dplq0tfv7146v"]
+
+[ext_resource type="PackedScene" uid="uid://k0r0ih0vapii" path="res://scenes/player.tscn" id="1_8r3iy"]
+[ext_resource type="PackedScene" uid="uid://c284hj7n0ws5" path="res://scenes/inventory.tscn" id="2_bofkp"]
+[ext_resource type="PackedScene" uid="uid://cwrt5dkevml8i" path="res://scenes/crafting.tscn" id="3_bq38n"]
+[ext_resource type="PackedScene" uid="uid://fs8et5ocl7vh" path="res://scenes/wood.tscn" id="4_hsi3f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l5u4l"]
+size = Vector2(2707, 21)
+
+[node name="Play" type="Node2D" unique_id=1396772413]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=689232267]
+offset_left = -783.0
+offset_top = -475.0
+offset_right = 881.0
+offset_bottom = 490.0
+color = Color(0.2784314, 0.73333335, 0.20392157, 1)
+
+[node name="Player" parent="." unique_id=1915863104 instance=ExtResource("1_8r3iy")]
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=52029328]
+position_smoothing_enabled = true
+
+[node name="Inventory" parent="." unique_id=171184748 instance=ExtResource("2_bofkp")]
+position = Vector2(521, -44)
+
+[node name="Crafting" parent="." unique_id=140455598 instance=ExtResource("3_bq38n")]
+position = Vector2(-495, -161)
+
+[node name="Wood" parent="." unique_id=674842207 instance=ExtResource("4_hsi3f")]
+position = Vector2(-919, 454)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2102398001]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=590911448]
+position = Vector2(0, 719)
+shape = SubResource("RectangleShape2D_l5u4l")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1901377267]
+position = Vector2(-1301, 224)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_l5u4l")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1644046177]
+position = Vector2(1308, -320)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_l5u4l")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1802109184]
+position = Vector2(51, -766)
+shape = SubResource("RectangleShape2D_l5u4l")

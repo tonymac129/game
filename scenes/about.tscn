@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://l5o2w20h8367"]
+
+[ext_resource type="Script" uid="uid://ctay2dwwpqmwi" path="res://scripts/about.gd" id="1_hx3vx"]
+
+[node name="About" type="Node2D" unique_id=1767436820]
+script = ExtResource("1_hx3vx")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=482590195]
+offset_left = -237.0
+offset_top = -179.0
+offset_right = 235.0
+offset_bottom = 224.0
+color = Color(0.17455417, 0.45555812, 0.31551418, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1839387607]
+offset_left = -113.0
+offset_top = -103.0
+offset_right = 109.0
+offset_bottom = -61.0
+theme_override_font_sizes/font_size = 30
+text = "About Mr. Rock"
+
+[node name="Label2" type="Label" parent="." unique_id=1524943139]
+custom_maximum_size = Vector2(400, 200)
+offset_left = -199.0
+offset_top = -22.0
+offset_right = 201.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 20
+text = "Mr. Rock is a game where you have to gather resources and invent things to revive a post-apocalyptic civilization"
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="." unique_id=2029219033]
+offset_left = -66.0
+offset_top = 101.0
+offset_right = 64.0
+offset_bottom = 157.0
+theme_override_font_sizes/font_size = 25
+text = "Close"
