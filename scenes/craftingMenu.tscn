@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://x78if0yehhbt"]
 
-[ext_resource type="Script" uid="uid://ctay2dwwpqmwi" path="res://scripts/about.gd" id="1_gmn2d"]
+[ext_resource type="Script" uid="uid://rwv4j4n34e0l" path="res://scripts/crafting_menu.gd" id="1_gmn2d"]
 
 [node name="CraftingMenu" type="Node2D" unique_id=1767436820]
 script = ExtResource("1_gmn2d")
@@ -51,8 +51,9 @@ size_flags_horizontal = 3
 size_flags_stretch_ratio = 6.68
 text = "Shovel"
 
-[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer" unique_id=174586872]
+[node name="Label2" type="Button" parent="ScrollContainer/VBoxContainer/HBoxContainer" unique_id=1728237804]
 layout_mode = 2
+size_flags_vertical = 4
 theme_override_font_sizes/font_size = 13
 text = "10 wood"
 
@@ -67,15 +68,12 @@ size_flags_horizontal = 3
 size_flags_stretch_ratio = 6.68
 text = "Pickaxe"
 
-[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer2" unique_id=2136114760]
+[node name="Button" type="Button" parent="ScrollContainer/VBoxContainer/HBoxContainer2" unique_id=578801712]
 layout_mode = 2
+size_flags_vertical = 4
+size_flags_stretch_ratio = 0.79
 theme_override_font_sizes/font_size = 13
-text = "20 wood"
-
-[node name="Label3" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer2" unique_id=116922361]
-layout_mode = 2
-theme_override_font_sizes/font_size = 13
-text = "30 stone"
+text = "30 wood 20 stone"
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="ScrollContainer/VBoxContainer" unique_id=1991754169]
 layout_mode = 2
@@ -88,8 +86,9 @@ size_flags_horizontal = 3
 size_flags_stretch_ratio = 6.68
 text = "Bottle"
 
-[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer3" unique_id=349317593]
+[node name="Label2" type="Button" parent="ScrollContainer/VBoxContainer/HBoxContainer3" unique_id=2061015054]
 layout_mode = 2
+size_flags_vertical = 4
 theme_override_font_sizes/font_size = 13
 text = "20 sand"
 
@@ -104,22 +103,8 @@ size_flags_horizontal = 3
 size_flags_stretch_ratio = 6.68
 text = "Miracle potion"
 
-[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer4" unique_id=964881504]
+[node name="Button" type="Button" parent="ScrollContainer/VBoxContainer/HBoxContainer4" unique_id=795089541]
 layout_mode = 2
+size_flags_vertical = 4
 theme_override_font_sizes/font_size = 13
-text = "30 wood"
-
-[node name="Label3" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer4" unique_id=2146812438]
-layout_mode = 2
-theme_override_font_sizes/font_size = 13
-text = "30 stone"
-
-[node name="Label4" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer4" unique_id=1364672491]
-layout_mode = 2
-theme_override_font_sizes/font_size = 13
-text = "30 sand"
-
-[node name="Label5" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer4" unique_id=1258192403]
-layout_mode = 2
-theme_override_font_sizes/font_size = 13
-text = "30 water"
+text = "30 wood 30 stone 30 sand 30 iron and bottle"

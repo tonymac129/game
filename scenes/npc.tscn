@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cwsdcwtw5e2t5"]
+
+[ext_resource type="Script" uid="uid://ctcw3ms5fivkj" path="res://scripts/npc.gd" id="1_abqhh"]
+[ext_resource type="Texture2D" uid="uid://c3k8a6rtjt6q5" path="res://icon.svg" id="2_rv78h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l5u4l"]
+size = Vector2(122, 123)
+
+[node name="NPC" type="Area2D" unique_id=673599437]
+script = ExtResource("1_abqhh")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1685135452]
+texture = ExtResource("2_rv78h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=712958973]
+position = Vector2(1, -2.5)
+shape = SubResource("RectangleShape2D_l5u4l")
+
+[node name="Label" type="Label" parent="." unique_id=1786244187]
+visible = false
+offset_left = -103.0
+offset_top = 72.0
+offset_right = 100.0
+offset_bottom = 95.0
+text = "Click to revive this person!"
+horizontal_alignment = 1
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

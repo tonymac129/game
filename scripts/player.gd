@@ -1,17 +1,19 @@
 extends CharacterBody2D
 
+signal inventory_changed
+
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 var inventory = {
-	"wood": 0,
-	"stone": 0,
-	"iron": 0,
-	"sand": 0,
-	"water": 0,
-	"shovel": false,
-	"pickaxe": false,
-	"bottle": false,
+	"wood": 100,
+	"stone": 100,
+	"iron": 100,
+	"sand": 100,
+	"shovel": true,
+	"pickaxe": true,
+	"bottle": true,
+	"miracle": true,
 }
 
 var discovered = {
@@ -20,6 +22,8 @@ var discovered = {
 
 const SPEED = 300.0
 
+func _ready()->void:
+	add_to_group("player")
 
 func _physics_process(delta: float) -> void:
 
