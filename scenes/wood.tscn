@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://fs8et5ocl7vh"]
 
 [ext_resource type="Script" uid="uid://cx4vy6vg3e3he" path="res://scripts/wood.gd" id="1_d45ue"]
-[ext_resource type="Texture2D" uid="uid://c3k8a6rtjt6q5" path="res://icon.svg" id="2_es2n6"]
+[ext_resource type="Texture2D" uid="uid://dasq7k0fihq4c" path="res://assets/48x48 trees.png" id="2_d45ue"]
+[ext_resource type="FontFile" uid="uid://dkcbfvc13exwq" path="res://assets/fonts/PixelifySans-VariableFont_wght.ttf" id="3_es2n6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l5u4l"]
 size = Vector2(298, 259)
@@ -14,19 +15,22 @@ position = Vector2(-6, -6)
 shape = SubResource("RectangleShape2D_l5u4l")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1749610209]
-position = Vector2(-6, -5)
-scale = Vector2(2.3359375, 1.9765625)
-texture = ExtResource("2_es2n6")
+position = Vector2(-4, -10)
+scale = Vector2(3.690441, 3.2660344)
+texture = ExtResource("2_d45ue")
+region_enabled = true
+region_rect = Rect2(99, 0, 45, 50)
 
 [node name="Label" type="Label" parent="Sprite2D" unique_id=942529469]
 anchors_preset = -1
-anchor_right = 0.38900003
-anchor_bottom = 0.28
-offset_left = -58.220737
-offset_top = -60.205536
-offset_right = 8.856827
-offset_bottom = -41.911156
+anchor_right = -0.11283476
+anchor_bottom = 0.18
+offset_left = -30.619648
+offset_top = -48.98907
+offset_right = 36.457916
+offset_bottom = -27.98907
 theme_override_colors/font_color = Color(0.9297146, 0.9297147, 0.9297146, 1)
+theme_override_fonts/font = ExtResource("3_es2n6")
 theme_override_font_sizes/font_size = 25
 text = "Wood"
 horizontal_alignment = 1
@@ -51,6 +55,48 @@ offset_top = 166.0
 offset_right = 124.0
 offset_bottom = 189.0
 text = "Click and hold to collect wood"
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1396486123]
+position = Vector2(74, 49)
+scale = Vector2(3.022998, 2.6530173)
+texture = ExtResource("2_d45ue")
+region_enabled = true
+region_rect = Rect2(146, -2, 45, 50)
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1182995947]
+position = Vector2(74, 49)
+scale = Vector2(3.022998, 2.6530173)
+texture = ExtResource("2_d45ue")
+region_enabled = true
+region_rect = Rect2(146, -2, 45, 50)
+
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=2107395086]
+position = Vector2(74, 49)
+scale = Vector2(3.022998, 2.6530173)
+texture = ExtResource("2_d45ue")
+region_enabled = true
+region_rect = Rect2(146, -2, 45, 50)
+
+[node name="Sprite2D6" type="Sprite2D" parent="." unique_id=1333274056]
+position = Vector2(153, -59.000008)
+scale = Vector2(2.4003882, 2.1865084)
+texture = ExtResource("2_d45ue")
+region_enabled = true
+region_rect = Rect2(146, -2, 45, 50)
+
+[node name="Sprite2D7" type="Sprite2D" parent="." unique_id=1750226848]
+position = Vector2(-152.00003, -59.000004)
+scale = Vector2(2.4003882, 2.1865084)
+texture = ExtResource("2_d45ue")
+region_enabled = true
+region_rect = Rect2(146, -2, 45, 50)
+
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=41334810]
+position = Vector2(-100, 55.999996)
+scale = Vector2(3.022998, 2.6530173)
+texture = ExtResource("2_d45ue")
+region_enabled = true
+region_rect = Rect2(3, -1, 45, 50)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
