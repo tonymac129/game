@@ -1,0 +1,125 @@
+[gd_scene format=3 uid="uid://x78if0yehhbt"]
+
+[ext_resource type="Script" uid="uid://ctay2dwwpqmwi" path="res://scripts/about.gd" id="1_gmn2d"]
+
+[node name="CraftingMenu" type="Node2D" unique_id=1767436820]
+script = ExtResource("1_gmn2d")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=482590195]
+offset_left = -237.0
+offset_top = -179.0
+offset_right = 235.0
+offset_bottom = 224.0
+color = Color(0.17455417, 0.45555812, 0.31551418, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1839387607]
+offset_left = -112.0
+offset_top = -180.0
+offset_right = 110.0
+offset_bottom = -138.0
+theme_override_font_sizes/font_size = 30
+text = "Crafting"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=2029219033]
+offset_left = -66.0
+offset_top = 160.0
+offset_right = 64.0
+offset_bottom = 216.0
+theme_override_font_sizes/font_size = 25
+text = "Close"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=996404092]
+offset_left = -213.0
+offset_top = -133.0
+offset_right = 209.0
+offset_bottom = 148.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer" unique_id=677014840]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer" unique_id=829588447]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer" unique_id=1052294533]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 6.68
+text = "Shovel"
+
+[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer" unique_id=174586872]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "10 wood"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/VBoxContainer" unique_id=631963510]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer2" unique_id=261654553]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 6.68
+text = "Pickaxe"
+
+[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer2" unique_id=2136114760]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "20 wood"
+
+[node name="Label3" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer2" unique_id=116922361]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "30 stone"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="ScrollContainer/VBoxContainer" unique_id=1991754169]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer3" unique_id=559896342]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 6.68
+text = "Bottle"
+
+[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer3" unique_id=349317593]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "20 sand"
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="ScrollContainer/VBoxContainer" unique_id=1384314791]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer4" unique_id=1666162095]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 6.68
+text = "Miracle potion"
+
+[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer4" unique_id=964881504]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "30 wood"
+
+[node name="Label3" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer4" unique_id=2146812438]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "30 stone"
+
+[node name="Label4" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer4" unique_id=1364672491]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "30 sand"
+
+[node name="Label5" type="Label" parent="ScrollContainer/VBoxContainer/HBoxContainer4" unique_id=1258192403]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "30 water"

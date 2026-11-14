@@ -1,5 +1,19 @@
 extends CharacterBody2D
 
+var inventory = {
+	"wood": 0,
+	"stone": 0,
+	"iron": 0,
+	"sand": 0,
+	"water": 0,
+	"shovel": false,
+	"pickaxe": false,
+	"bottle": false,
+}
+
+var discovered = {
+	"stick": false,
+}
 
 const SPEED = 300.0
 

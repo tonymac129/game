@@ -2,8 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://k0r0ih0vapii" path="res://scenes/player.tscn" id="1_8r3iy"]
 [ext_resource type="PackedScene" uid="uid://c284hj7n0ws5" path="res://scenes/inventory.tscn" id="2_bofkp"]
+[ext_resource type="PackedScene" uid="uid://x78if0yehhbt" path="res://scenes/craftingMenu.tscn" id="3_1o7w5"]
 [ext_resource type="PackedScene" uid="uid://cwrt5dkevml8i" path="res://scenes/crafting.tscn" id="3_bq38n"]
 [ext_resource type="PackedScene" uid="uid://fs8et5ocl7vh" path="res://scenes/wood.tscn" id="4_hsi3f"]
+[ext_resource type="PackedScene" uid="uid://oc2f1td363vg" path="res://scenes/stone.tscn" id="5_65v2a"]
+[ext_resource type="PackedScene" uid="uid://c1b3btqo6a02o" path="res://scenes/ui.tscn" id="6_j27tm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l5u4l"]
 size = Vector2(2707, 21)
@@ -11,16 +14,11 @@ size = Vector2(2707, 21)
 [node name="Play" type="Node2D" unique_id=1396772413]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=689232267]
-offset_left = -783.0
-offset_top = -475.0
-offset_right = 881.0
-offset_bottom = 490.0
+offset_left = -1294.0
+offset_top = -718.0
+offset_right = 1703.0
+offset_bottom = 978.0
 color = Color(0.2784314, 0.73333335, 0.20392157, 1)
-
-[node name="Player" parent="." unique_id=1915863104 instance=ExtResource("1_8r3iy")]
-
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=52029328]
-position_smoothing_enabled = true
 
 [node name="Inventory" parent="." unique_id=171184748 instance=ExtResource("2_bofkp")]
 position = Vector2(521, -44)
@@ -50,3 +48,22 @@ shape = SubResource("RectangleShape2D_l5u4l")
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1802109184]
 position = Vector2(51, -766)
 shape = SubResource("RectangleShape2D_l5u4l")
+
+[node name="Stone" parent="." unique_id=1443291817 instance=ExtResource("5_65v2a")]
+position = Vector2(1089, 474)
+
+[node name="Player" parent="." unique_id=1915863104 instance=ExtResource("1_8r3iy")]
+unique_name_in_owner = true
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=52029328]
+position_smoothing_enabled = true
+
+[node name="CanvasLayer" parent="." unique_id=587432050 instance=ExtResource("6_j27tm")]
+
+[node name="CraftingMenu" parent="CanvasLayer" unique_id=1767436820 instance=ExtResource("3_1o7w5")]
+visible = false
+position = Vector2(555, 294)
+scale = Vector2(1.5, 1.5)
+
+[connection signal="body_exited" from="Crafting" to="Inventory" method="_on_crafting_body_exited"]
+[connection signal="body_exited" from="Crafting" to="Crafting" method="_on_body_exited"]

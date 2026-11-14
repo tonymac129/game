@@ -7,7 +7,7 @@ func _ready() -> void:
 	button.pressed.connect(_on_play_pressed)
 
 func _on_play_pressed() -> void:
-	queue_free()
+	hide()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
